@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+
+class AppTheme {
+  static const Color dark = Color(0xFF1E1E1E);
+  static const Color light = Color(0xFFFFFFFF);
+
+  static ThemeData get lightTheme {
+    return ThemeData(
+      primarySwatch: Colors.blue,
+      scaffoldBackgroundColor: Colors.white,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.blue,
+        titleTextStyle: TextStyle(
+          color: light,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+
+  static ThemeData get darkTheme {
+    return ThemeData(
+      primarySwatch: Colors.blueGrey,
+      scaffoldBackgroundColor: dark,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.blueGrey,
+        titleTextStyle: TextStyle(
+          color: light,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+}
