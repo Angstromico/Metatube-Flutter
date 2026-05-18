@@ -20,9 +20,12 @@ class HomeScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            _mainButton('New File', () {}), 
-            _mainButton('Safe File', () {}), 
-            const SizedBox(width: 10),
+            _mainButton('New File', () {}),  
+            Row(
+              children: [
+                _actionButton(() => null, Icons.file_upload)
+              ]
+            )
             ],
             ),
         ],
@@ -34,6 +37,13 @@ class HomeScreen extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       child: Text(label),
+    );
+  }
+
+  IconButton _actionButton(Function()? onPressed, IconData icon) {
+    return IconButton(
+      onPressed: onPressed,
+      icon: Icon(icon),
     );
   }
 }
