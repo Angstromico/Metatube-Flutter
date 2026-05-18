@@ -23,7 +23,8 @@ class HomeScreen extends StatelessWidget {
             _mainButton('New File', () {}),  
             Row(
               children: [
-                _actionButton(() => null, Icons.file_upload)
+                _actionButton(() => null, Icons.file_upload),
+                _actionButton(() => null, Icons.folder)
               ]
             )
             ],
