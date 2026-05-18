@@ -7,11 +7,11 @@ class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
       primarySwatch: Colors.blue,
-      scaffoldBackgroundColor: Colors.white,
+      scaffoldBackgroundColor: light,
       appBarTheme: const AppBarTheme(
         backgroundColor: Colors.blue,
         titleTextStyle: TextStyle(
-          color: light,
+          color: dark,
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
