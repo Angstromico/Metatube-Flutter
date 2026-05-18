@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:metatube/utils/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -45,6 +46,7 @@ class HomeScreen extends StatelessWidget {
     return IconButton(
       onPressed: onPressed,
       icon: Icon(icon),
+      color: AppTheme.medium,
     );
   }
 }
