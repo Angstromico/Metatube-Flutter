@@ -9,9 +9,30 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('MetaTube'),
       ),
-      body: const Center(
-        child: Text('Welcome to MetaTube!'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text(
+            'Welcome to MetaTube!',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            _mainButton('Browse', () {}), 
+            const SizedBox(width: 10),
+            ],
+            ),
+        ],
       ),
+    );
+  }
+
+  ElevatedButton _mainButton(String label, VoidCallback onPressed) {
+    return ElevatedButton(
+      onPressed: onPressed,
+      child: Text(label),
     );
   }
 }
