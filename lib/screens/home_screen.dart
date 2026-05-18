@@ -20,7 +20,8 @@ class HomeScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            _mainButton('Browse', () {}), 
+            _mainButton('New File', () {}), 
+            _mainButton('Safe File', () {}), 
             const SizedBox(width: 10),
             ],
             ),
